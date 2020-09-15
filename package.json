@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "start": "NODE_ENV=PRODUCTION node dist/server.js",
+    "start": " node dist/app/server.js",
     "push": "git push origin master && git push heroku master",
-    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpileOnly --ignore-watch node_modules --no-notify src/server.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --ignore-watch node_modules --no-notify src/app/server.ts",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback --all",
     "create:migration": "knex migrate:make "

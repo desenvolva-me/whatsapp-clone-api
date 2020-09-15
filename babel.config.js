@@ -15,9 +15,14 @@ module.exports = {
       "module-resolver",
       {
         alias: {
-          "@config": "./src/app/config",
-          "@services": "./src/app/services",
           "@controllers": "./src/app/controllers",
+          "@services": "./src/app/services",
+          "@config": "./src/app/config",
+          "@infra": "./src/app/infra",
+          "@routes": "./src/app/routes",
+          "@utils": "./src/app/utils",
+          "@modelTypes": "./src/app/types",
+          "@middlewares": "./src/app/middlewares",
           "@database": "./src/database",
         },
       },
