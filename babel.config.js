@@ -14,9 +14,13 @@ module.exports = {
     [
       "module-resolver",
       {
-        alias: {},
+        alias: {
+          "@config": "./src/app/config",
+          "@services": "./src/app/services",
+          "@controllers": "./src/app/controllers",
+          "@database": "./src/database",
+        },
       },
     ],
   ],
-  ignore: ["**/*.spec.ts"],
 };
